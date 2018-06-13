@@ -21,6 +21,8 @@ class Search
          merge(word, lineNumber, p, q, r);
       }
    }
+
+   
    static void merge(String[] word, int[] lineNumber, int p, int q, int r)
    {
       int n1 = q-p+1;
@@ -41,7 +43,6 @@ class Search
          R[j] = word[q+j+1];
          Right[j] = lineNumber[q+j+1];
       }
-
       i = 0; j = 0;
       for(k=p; k<=r; k++)
       {
@@ -74,6 +75,8 @@ class Search
          }
       }
    }
+
+
    static int binarySearch(String[] A, int p, int r,  String target)
    {
       int q;
@@ -98,11 +101,15 @@ class Search
          }
       }
    }
+
+
    static void usage()
    {
       System.out.println("% Search\nUsage: Search file target1 [target2 ..]");
       System.exit(1);
    }
+
+
    static int GetLineNumber(String address) throws IOException
    {
       Scanner in = new Scanner(new File(address));
