@@ -1,0 +1,20 @@
+Programming Assignment 3 - readme.txt
+# Name: Sinclair Liang
+# E-Mail: wliang13@ucsc.edu
+# CMPS 101 PA 3 -- Anagram
+
+-------------
+Table of Contexts
+-------------
+anagram.java
+FindAnagram.java
+Readme
+NoteToGrader
+
+------------
+Design
+------------
+I sort the string first, convert them all to lowercased, then take the hash code of that to be the code, which is the identifier of that word, along with other anagrams;
+
+
+
