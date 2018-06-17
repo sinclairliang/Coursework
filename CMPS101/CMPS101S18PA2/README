@@ -1,0 +1,30 @@
+Programming Assignment 2 - readme.txt
+# Name: Sinclair Liang
+# E-Mail: wliang13@ucsc.edu
+# CMPS 101 PA 2 -- Arbitrary Precision Arithmetic
+
+-------------------------
+Table of Contents
+-------------------------
+apint.c
+apint.h
+apincmain.c
+makefile
+
+
+-------------------------
+Design
+-------------------------
+
+This is the same problem we worked on in the last assignment, however
+in C this time. As C is not an object oriented language, we can simulate the features of an object oriented language.
+
+------------------------- 
+Difficulties 
+------------------------- 
+The first difficulty I ran into is the ways to deal with pointers. With
+Java I did not have to deal with pointers, but everything in C is
+related somehow with pointers. So I first started with familiaring
+with pointers. In every function I was working with I have to think a
+step ahead to determine how long the array would be because I used the
+array implementation.
