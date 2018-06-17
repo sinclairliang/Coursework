@@ -1,0 +1,23 @@
+Programming Assignment 1 - readme.txt
+# Name: Sinclair Liang
+# E-Mail: wliang13@ucsc.edu
+# CMPS 101 PA 1 -- Arbitrary Precision Arithmetic
+
+-------------------------
+Table of Contents
+-------------------------
+apint.java
+aprat.java
+apa_test.java
+
+-------------------------
+Design
+-------------------------
+
+As in Java integers can only represent integers from -2,147,483,648 to
+2,147,483,647, we decide to design a method to bigger integers in
+Java. In my case, I used integer arrays to store each integers
+individually. Later I also developed different arithmetic methods such
+as addtion, subtraction, multiplication and division. After I am done
+with integers, I extended my apint to aprat, in order to represent
+rational numbers.
