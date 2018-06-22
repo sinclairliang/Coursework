@@ -143,6 +143,7 @@ def display():
 
 def test_case():
     # test case, comparing the result from built in sorted() function and sorting() function.
+    # test unit
     lis = cleaning_words(read_the_file('./section/resource/test2.txt'))
     result1 = sorted(lis)
     result2 = sorting(lis)
