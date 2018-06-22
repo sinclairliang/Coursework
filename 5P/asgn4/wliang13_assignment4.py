@@ -66,7 +66,7 @@ def decrypt(text, keyword):
     return result
 
 
-def call_function():
+def main():
     message = input('What is your message?\n')
     key = input('What is your key?\n')
     while True:
@@ -80,4 +80,4 @@ def call_function():
     return 0
 
 
-call_function()
+main()
