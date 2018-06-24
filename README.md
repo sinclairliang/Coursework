@@ -1,1 +1,12 @@
 # Coursework
+
+`Sinclair Liang` [wliang13@ucsc.edu](mailto:wliang13@ucsc.edu)
+******
+This is a repository for coursework done by myself, Sinclair Liang. While completing my Bachelors of Science in Computer Science at University of California, Santa Cruz. So far I have taken the following classes: 
+
+* Intro to Python
+* Intro to Java
+* Computer Systems in Assembly
+* Data Structure in Java and C
+* Algorithms in Java and C
+* Intro to Computer Networking
