@@ -25,11 +25,13 @@ class apint
 		length = 0;
 		digits = null;
 	}
+
 	public apint(String s)
 	{
 		// a constructor for a string
 		char s0 = s.charAt(0);
-		if (!Character.isDigit(s0)) 
+		if (!Character.isDigit(s0))
+		// in this case the string contains a sign;
 		{
 			sign = String.valueOf(s0);
 			length = s.length()-1;
@@ -40,6 +42,7 @@ class apint
 			}
 		}
 		else
+		// in this case the string is just a string of numbers;
 		{
 			length = s.length();
 			digits = new int[length];
@@ -84,7 +87,7 @@ class apint
 	{
 		// a constructor for an array of integers
 		int ori_length = a.length;
-		int zero_length = 0;
+		int zero_length = 0; // the lenght of leading zeros;
 		int j = 0;
       	while (j < ori_length)
       	{
@@ -98,18 +101,22 @@ class apint
       		}
       		j++;
       	}
+
       	int should_be = a.length-zero_length;
+      	// the lenght of non-leading part;
       	
-      	if (should_be == 0) 
+      	if (should_be == 0)
+      	// in this case it is all zeros;
       	{
       		digits = new int[1];
       		length = 1;
       		digits[0] = 0;
       	}
+
       	else
       	{
       		digits = new int[should_be];
-      		for (int i=0;i<should_be ;i++ ) 
+      		for (int i=0;i<should_be ;i++) 
       		{
       			digits[i] = a[zero_length+i];
       		}
@@ -139,51 +146,50 @@ class apint
 
 	public static void print(apint z)
 	{
+		// prints the apint to stdout;
 	    System.out.print(z.sign);
-	    int leading_zero=0;
-	    Boolean flag = false;
-	    int i=0;
+	    // int leading_zero=0;
+	    // Boolean flag = false;
+	    // int i=0;
 	    for (int k=0; k<z.length; k++)
 	    {
 	    	System.out.print(z.digits[k]);
 	    }	
-	    // System.out.println();
 	}
 
 
 	apint add(apint z)
 	{
+		// returns: the sum of this and z;
 		int carry_over = 0;
 		int [] longer_array;
     	int [] shorter_array;
 		int [] result = new int [Math.max(this.length, z.length)+2];
     	int need_add = (Math.min(this.length, z.length)+1);
-	     if (this.length >= z.length) 
-	     {
+
+	    if (this.length >= z.length) 
+	    {
 	        longer_array = this.digits;
 	        shorter_array = z.digits;
-	     }
-	     else
-	     {
+	    }
+	    else
+	    {
 	        longer_array = z.digits;
 	        shorter_array = this.digits;
-	     }
-
-	   	// System.out.print("longer_array = ");
-	    // printArray(longer_array);
-	    // System.out.print("shorter_array = ");
-	    // printArray(shorter_array);
-
+	    }
 
 	    int [] longer_array_use = new int [longer_array.length+1];
 	    longer_array_use [0] = 0;
-	    for (int j = 1;j<longer_array_use.length ;j++) 
+
+	    // copies the whole array of number over, with a zero in the front;
+	    for (int j = 1;j<longer_array_use.length;j++) 
 	    {
 	    	longer_array_use [j] = longer_array[j-1];
 	    }
 
 	    int [] shorter_array_use = new int [shorter_array.length+1];
 	    shorter_array_use [0] = 0;
+	    // copies the whole array of number over, with a zero in the front;
 	    for (int k = 1;k<shorter_array_use.length ;k++) 
 	    {
 	    	shorter_array_use [k] = shorter_array[k-1];
@@ -191,10 +197,9 @@ class apint
 
 
 
-	    for (int i = 0;i<need_add ;i++)
+	    for (int i = 0;i<need_add;i++)
 	    {
 	        int temp_digit = shorter_array_use[shorter_array_use.length-i-1] + longer_array_use[longer_array_use.length-i-1]+carry_over;
-	        // System.out.println(longer_array_use[longer_array_use.length-i-1] + " is adding "+ shorter_array_use[shorter_array_use.length-i-1]+ " carry_over = "+carry_over + " temp_digit = " + temp_digit);
 	        if (temp_digit < 10)
 	        {
 	            result [result.length-i-1] =  temp_digit;
@@ -206,8 +211,7 @@ class apint
 	            carry_over = 1;
 	        }
 	    }
-	    // System.out.println("result [] = ");
-	    // printArray(result);
+
 	    for (int k = need_add+1;k<result.length ;k++) 
 	    {
 	        int temp_digit = longer_array_use[result.length-k-1] + carry_over;
@@ -221,13 +225,6 @@ class apint
 	        	result [result.length-k] = temp_digit;
 	        	carry_over = temp_digit/10;
 	        }
-	        // System.out.println("carry_over = "+carry_over+"temp_digit = "+temp_digit);
-	        // System.out.println(longer_array_use[result.length-k-1] + " is adding "+" carry_over = "+carry_over + " temp_digit = " + temp_digit);
-	        // result [result.length-k] = temp_digit;
-	        // carry_over = temp_digit/10;
-	        // System.out.println("result [] = ");
-	    	// printArray(result);
-	    	// System.out.println("carry_over = "+carry_over);
 	    }
 	    return new apint(result);
 	}
@@ -236,13 +233,7 @@ class apint
 	{
 		int carry_over=0;
 		int [] longer_array;
-	    int [] shorter_array;
-	    // System.out.println();
-	   	// System.out.println("this.digits [] = ");
-	    // printArray(this.digits);
-	   	// System.out.println("z.digits [] = ");
-	    // printArray(z.digits);	
-	    
+	    int [] shorter_array;	    
 	    int [] this_use = new int [this.length+1];
 	    this_use [0] = 0;
 	    for (int j = 1;j<this_use.length ;j++) 
@@ -252,30 +243,20 @@ class apint
 
 	    int [] that_use = new int [z.length+1];
 	    that_use [0] = 0;
-
+	    // copies the whole array of number over, with a zero in the front;
 	    for (int k = 1;k<that_use.length ;k++) 
 	    {
-	    	// System.out.println("z.length = "+z.length);
-	    	// printArray(z.digits);
 	    	that_use [k] = z.digits[k-1];
 	    }
-	    // System.out.println("this_use = ");
-	    // printArray(this_use);
-	    // System.out.println("that_use = ");
-	    // printArray(that_use);
+
 	    longer_array = return_larger(this_use, that_use);
 	    shorter_array = return_shorter(this_use, that_use);
-	    // System.out.println("longer_array = ");
-	    // printArray(longer_array);
-	    // System.out.println("shorter_array = ");
-	    // printArray(shorter_array);
 
 	    int [] result = new int [Math.max(this.length, z.length)+1];
 	    int need_sub = Math.min(this.length, z.length);
 	    for (int i = 0;i<need_sub ;i++)
 	    {   
 	        int temp_digit = longer_array[longer_array.length-i-1] - shorter_array[shorter_array.length-i-1]+carry_over;
-	        // System.out.println(longer_array[longer_array.length-i-1] + " is subtracting "+ shorter_array[shorter_array.length-i-1]+ " carry_over = "+carry_over + " temp_digit = " + temp_digit);
 	        
 	        if (temp_digit < 0)  
 	        {
@@ -287,31 +268,21 @@ class apint
 	            result [result.length-i-1] =  temp_digit;
 	            carry_over = 0;
 	        }
-	        // System.out.println("result [] = ");
-	        // printArray(result);
-	        
 	    }
 	    for (int k = need_sub+1;k<result.length ;k++) 
 	    {
-
-			
 	        int temp_digit = longer_array[result.length-k]+carry_over;
 
-	        // System.out.println(longer_array[result.length-k] + " is being put into result[] "+ " carry_over = "+carry_over + " temp_digit = " + temp_digit);
 	        if (temp_digit == -1) 
 	        {
 	        	result [result.length-k] = 9;
 	        	carry_over = -1;
-	        	// k++;
 	        }
 	        else
 	        {
 	        	result [result.length-k] = temp_digit;
 	        	carry_over = 0;
-	        }
-	        
-	        // System.out.println(longer_array[result.length-k-1] + " is being put into result[] "+ " carry_over = "+carry_over + " temp_digit = " + temp_digit);
-	        
+	        }  
 	    }
 	    return new apint(result);
 
@@ -326,43 +297,30 @@ class apint
 		// tribute to: https://www.cut-the-knot.org/Curriculum/Algebra/PeasantMultiplication.shtml
 		apint a = this;
 		apint result = new apint(0);
-		if (is_zero(this) == true || is_zero(z) == true) 
+		if (is_zero(this) || is_zero(z)) 
 		{
 			return new apint(0);
 		}
 		if (a.length == 1 && z.length == 1) 
 		{
-			
+			// single digit number;	
 			return new apint(a.digits[a.length-1]*z.digits[z.length-1]);
 		}
-		
 
 		if (a.digits[a.length-1]%2 != 0) 
 		{
 			result = result.add(z);
-			// System.out.print("pre_result = ");
-	  		// print(result);
-	  		// System.out.println();
 		}
 
 	    while(is_one(a) == false)
 	    {
 	        a = half(a);
-	        // System.out.print("a = ");
-	        // print(a);
-	        // printArray(a.digits);
 	        z = doubling(z);
-	        // System.out.print("b = ");
-	        // printArray(z.digits);
 	        if (a.digits[a.length-1]%2 != 0) 
 	        {
 	            result = result.add(z);
-	            // System.out.print("result = ");
-	            // print(result);
 	        }
-	        // System.out.println();
 	    }
-	    // System.out.println();
 	    return result;
 	}
 
@@ -378,8 +336,6 @@ class apint
 		{
 			divident=divident.sub(divisor);
 			result1 = result1.add(one);
-			// System.out.println("result = ");
-			// print(result1);
 		}
 		return result1;
 	}
@@ -398,15 +354,15 @@ class apint
 	    
 	    for (int i=0; i<length; i++) 
 	    {
-	      if (digits[i] < other.digits[i])
-	      {
-	      	return -1;
-	      }
+	    	if (digits[i] < other.digits[i])
+	      	{
+	      		return -1;
+	      	}
 	        
-	      else if (digits[i] > other.digits[i])
-	      {
-	      	return 1;
-	      }   
+	      	else if (digits[i] > other.digits[i])
+	      	{
+	      		return 1;
+	      	}   
 	    }
 	    return 0;
   	}
@@ -427,28 +383,30 @@ class apint
     
     public static apint doubling (apint A)
     {
-    	// return double of the input
+    	// return double of the input by adding itself;
         apint result = A.add(A);
         return result;
     }
 
     public static Boolean is_one (apint A)
     {
-    
+    	// to see if A == 1;
 		int i = 0;
-		for( ; i < A.length; i++)
+		for(;i < A.length; i++)
 		{
 		   if(A.digits[i] != 0)
 		   {
 		    break;
 		   }
 		}
+
+		// i = the number of leading zeros;
+
 		int [] no_zeros = new int[A.length - i];
-		for (int k = 0;k<no_zeros.length ;k++ ) 
+		for (int k = 0;k<no_zeros.length ;k++) 
 		{
 			no_zeros[k] = A.digits[k+i];
 		}
-    	// printArray(no_zeros);
     	if (no_zeros.length == 1) 
     	{
     		if (no_zeros[0] == 1) 
@@ -459,8 +417,9 @@ class apint
 	    return false;
     }
 
-	public static boolean is_zero(apint A) 
+	public static boolean is_zero(apint A)
 	{
+		// to see if A == 0;
 	    for (int i=0; i<A.length; i++)
 	    {
 	    	if (A.digits[i] != 0)
@@ -477,7 +436,6 @@ class apint
 		{
 			System.out.print(A[i]);
 		}
-		// System.out.println();
 	}
 
 
@@ -554,6 +512,8 @@ class apint
 		}
 	  	return shorter;
 	}
+
+
 	public static apint factorial(apint n)
 	{
 	  	apint one = new apint(1);

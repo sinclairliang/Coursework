@@ -27,8 +27,10 @@ class aprat extends apint
 
 	public aprat(apint n, apint d)
 	{
+		// returns aprat such as n/d;
 		if (n.sign != d.sign) 
 		{
+			// different signs;
 			this.sign = "-";
 		}
 		this.sign = "";
@@ -38,6 +40,7 @@ class aprat extends apint
 
 	public aprat(int n, int d)
 	{
+		// returns aprat such as n/d;
 		if (n*d < 0) 
 		{
 			this.sign = "-";
@@ -89,6 +92,7 @@ class aprat extends apint
 
 	aprat add(aprat z)
 	{
+		// return the simplfied result of the sum of two aprat numbers;
 		apint this_up = this.numerator;
 		apint this_down = this.denominator;
 		apint z_up = z.numerator;
@@ -101,6 +105,7 @@ class aprat extends apint
 
 	aprat sub(aprat z)
 	{
+		// return the simplfied result of the difference of two aprat numbers;
 		apint this_up = this.numerator;
 		apint this_down = this.denominator;
 		apint z_up = z.numerator;
@@ -113,6 +118,7 @@ class aprat extends apint
 
 	aprat multiplication(aprat z)
 	{
+		// return the simplfied result of the product of two aprat numbers;
 		apint numerator_up = this.numerator;
 		apint denominator_up = this.denominator;
 		apint numerator_down = z.numerator;
@@ -138,6 +144,7 @@ class aprat extends apint
 
 	public static apint gcd(apint a, apint b)
 	{
+		// return the greatest common divisor of two apint numbers;
 		if (is_zero(a)) 
 		{
 			return b;	
@@ -153,6 +160,7 @@ class aprat extends apint
 
 	aprat normalisation()
 	{
+		// return the simplified form of any aprat number;
 		apint numerator = this.numerator;
 		apint denominator = this.denominator;
 		apint divisor = gcd(numerator,denominator);
