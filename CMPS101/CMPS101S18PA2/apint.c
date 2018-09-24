@@ -44,8 +44,8 @@ apint* normalisation(apint *original) {
 	/*
 	making sure it returns the normalised form of apint object by eliminating leading zeros;
 	*/
-	apint *result = apint_new(); // inisiate a new apint object';
-	int leading_zero = 0; // initiasing leading zero to 0;
+	apint *result = apint_new(); // initialise a new apint object';
+	int leading_zero = 0; // initialise leading zero to 0;
 
 	while (original->digits[leading_zero] == 0) {
 	// count leading zeros;
