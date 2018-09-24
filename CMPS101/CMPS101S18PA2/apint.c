@@ -227,9 +227,8 @@ apint* add(apint* one, apint* two) {
 		shorter_array_use [k] = shorter_array[k - 1];
 	}
 
-	 if (two->sign == '-')
-	 {
-	 	// if adding a negative number, call subtract() on them;
+	if (two->sign == '-'){
+		// if adding a negative number, call subtract() on them;
 	 	apint *to_be_minus = apint_new();
 	 	to_be_minus->sign = '+';
 	 	to_be_minus->length = two->length;
@@ -241,7 +240,7 @@ apint* add(apint* one, apint* two) {
 	 	to_be_minus = normalisation(to_be_minus);
 	 	apint* result_value = normalisation(subtract(one, to_be_minus));
 	 	return result_value;
-	 }
+	}
 
 	for (int i = 0; i < need_add; i++) {
 		// doing the subtraction operation;
@@ -380,7 +379,7 @@ apint* mul(apint* one, apint* two) {
 	/*
 	Multiplication method for apint objects, return the product of two apint objects;
 	Parameters: two apint objects;
-	Return: the difference of two apint objects;
+	Return: the product of two apint objects;
 	Tribute: Russian-Peasant multiplication;
 	*/
 	int one_sign;
