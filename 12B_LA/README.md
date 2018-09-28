@@ -1,5 +1,6 @@
 ## CMPS 12B as a Learning Assistant ##
 
+### This page is maintained by [Sinclair Liang](https://sinclairliang.com) ###
 
 |Date   |Topic   |Notes   |Reference   |Key Words   |
 |---|---|---|---|---|
