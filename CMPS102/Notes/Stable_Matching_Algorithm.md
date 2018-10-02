@@ -20,7 +20,7 @@ Initialise each person to be free
     }
 ```
 
-Here is the implementation in Python 3 code:
+Here is the implementation in Python 3 code snippet:
 
 ```python
 tentative_engagements = []
@@ -40,44 +40,47 @@ def stable_matching():
 def begin_matching(man):
 	print("Matching for this man: {}".format(man))
 	for woman in preferred_rankings_men[man]:
-		taken_match = [couple for couple in tentative_engagements if woman in couple]
 
-		if (len(taken_match) == 0):
-			tentative_engagements.append([man, woman])
+......
 
-			free_men.remove(man)
-			print("{} is no longer a free man and now tentatively engaged to {}".format(man, woman))
-			break
+```
+[complete implementation in python](https://github.com/sinclairliang/Coursework/blob/master/CMPS102/Algorithms_in_Class/stabel_matching_algorithm.py)
 
-		elif (len(taken_match) > 0):
-			print("Person {} is taken already...".format(woman))
-			current_guy_ranking = preferred_rankings_women[woman].index(taken_match[0][0])
-			potential_guy_ranking = preferred_rankings_women[woman].index(man)
+Cool, now let's run it with some funny character names.
 
-			if (current_guy_ranking < potential_guy_ranking):
-				print("She ({}) is satisfied with {}...".format(taken_match[0][1],man))
-			else:
-				print("{} is better than the old guy {}".format(man, taken_match[0][0]))
-				print("{} is free agian".format(taken_match[0][0]))
+// memes
 
-				free_men.remove(man)
-				free_men.append(taken_match[0][0])
-
-				taken_match[0][0] = man
-				break
- 
+[![Mr.Darcygiff.jpg](https://i.postimg.cc/brkWtn50/Mr.Darcygiff.jpg)](https://postimg.cc/jnqMVDtC)
 
 
 
+[![9015e1aacd3bd5d6e6d9622a52a3bcf7--pride-and-prejudice-characters.jpg](https://i.postimg.cc/J0NYnLyP/9015e1aacd3bd5d6e6d9622a52a3bcf7--pride-and-prejudice-characters.jpg)](https://postimg.cc/ctJB9PBn)
 
-def main():
-	print("Hello World!")
-	init_free_men()
-	stable_matching()
+[![jane-austen-meme-26.jpg](https://i.postimg.cc/RVTwZF0j/jane-austen-meme-26.jpg)](https://postimg.cc/HVVrSTX2)
 
-	print("----COMPLETE----")
-	for couple in tentative_engagements:
-	# print(tentative_engagements)
-		print("{} is engaged to {}".format(couple[1], couple[0]))
+// end of memes
+
+Here I have put their preferences into dictionaries
+
+```python
+preferred_rankings_men = {
+	'Binley':  ['Jane', 'Elizabeth', 'Lydia', 'Charlotte'],
+	'Darcy':   ['Elizabeth', 'Jane', 'Charlotte', "Lydia"],
+	'Wickham': ['Lydia', 'Jane', 'Elizabeth', 'Charlotte'],
+	'Collins': ['Jane', 'Elizabeth', 'Lydia', 'Charlotte']
+}
+
+preferred_rankings_women = {
+	'Jane' :     ['Binley', 'Wickham', 'Darcy', 'Collins'],
+	'Elizabeth': ['Wickham', 'Darcy', 'Binley', 'Collins'],
+	'Lydia':     ['Binley', 'Wickham', 'Darcy', 'Collins'],
+	'Charlotte': ['Binley', 'Darcy', 'Collins', 'Wickham']
+}
 ```
 
+[![Screenshot_from_2018-10-02_02-23-39.png](https://i.postimg.cc/ncQc3SyT/Screenshot_from_2018-10-02_02-23-39.png)](https://postimg.cc/ppRHTCXn)
+
+So the book was right!
+
+:construction::construction: 
+Java implementation
