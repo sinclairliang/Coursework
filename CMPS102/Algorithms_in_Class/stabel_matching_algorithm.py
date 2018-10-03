@@ -5,59 +5,59 @@ and Pride and Prejudice by Jane Austen
 
 preferred_rankings_men = {
 	'Binley':  ['Jane', 'Elizabeth', 'Lydia', 'Charlotte'],
-	'Darcy':   ['Elizabeth', 'Jane', 'Charlotte', "Lydia"],
 	'Wickham': ['Lydia', 'Jane', 'Elizabeth', 'Charlotte'],
+	'Darcy':   ['Elizabeth', 'Jane', 'Charlotte', "Lydia"],
 	'Collins': ['Jane', 'Elizabeth', 'Lydia', 'Charlotte']
 }
 
 preferred_rankings_women = {
 	'Jane' :     ['Binley', 'Wickham', 'Darcy', 'Collins'],
-	'Elizabeth': ['Wickham', 'Darcy', 'Binley', 'Collins'],
 	'Lydia':     ['Binley', 'Wickham', 'Darcy', 'Collins'],
+	'Elizabeth': ['Wickham', 'Darcy', 'Binley', 'Collins'],
 	'Charlotte': ['Binley', 'Darcy', 'Collins', 'Wickham']
 }
 
 tentative_engagements = []
 
-free_men = []
+free_women = []
 
-def init_free_men():
-	for man in preferred_rankings_men.keys():
-		free_men.append(man)
+def init_free_women():
+	for woman in preferred_rankings_women.keys():
+		free_women.append(woman)
 
 
 def stable_matching():
-	while (len(free_men) > 0):
-		for man in free_men:
-			begin_matching(man)
+	while (len(free_women) > 0):
+		for woman in free_women:
+			begin_matching(woman)
 
-def begin_matching(man):
-	print("Matching for this man: {}".format(man))
-	for woman in preferred_rankings_men[man]:
-		taken_match = [couple for couple in tentative_engagements if woman in couple]
+def begin_matching(woman):
+	print("Matching for this woman: {}".format(woman))
+	for man in preferred_rankings_women[woman]:
+		taken_match = [couple for couple in tentative_engagements if man in couple]
 
 		if (len(taken_match) == 0):
-			tentative_engagements.append([man, woman])
+			tentative_engagements.append([woman, man])
 
-			free_men.remove(man)
-			print("{} is no longer a free man and now tentatively engaged to {}".format(man, woman))
+			free_women.remove(woman)
+			print("{} is no longer a free woman and now tentatively engaged to {}".format(woman, man))
 			break
 
 		elif (len(taken_match) > 0):
-			print("Person {} is taken already...".format(woman))
-			current_guy_ranking = preferred_rankings_women[woman].index(taken_match[0][0])
-			potential_guy_ranking = preferred_rankings_women[woman].index(man)
+			print("Person {} is taken already...".format(man))
+			current_girl_ranking = preferred_rankings_men[man].index(taken_match[0][0])
+			potential_girl_ranking = preferred_rankings_men[man].index(woman)
 
-			if (current_guy_ranking < potential_guy_ranking):
-				print("She ({}) is satisfied with {}...".format(taken_match[0][1],taken_match[0][0]))
+			if (current_girl_ranking < potential_girl_ranking):
+				print("He ({}) is satisfied with {}...".format(taken_match[0][1],taken_match[0][0]))
 			else:
-				print("{} is better than the old guy {}".format(man, taken_match[0][0]))
+				print("{} is better than the old girl {}".format(woman, taken_match[0][0]))
 				print("{} is free agian".format(taken_match[0][0]))
 
-				free_men.remove(man)
-				free_men.append(taken_match[0][0])
+				free_women.remove(woman)
+				free_women.append(taken_match[0][0])
 
-				taken_match[0][0] = man
+				taken_match[0][0] = woman
 				break
 	print("\n")	
  
@@ -67,10 +67,10 @@ def begin_matching(man):
 
 def main():
 	print("Hello World!")
-	init_free_men()
+	init_free_women()
 	stable_matching()
 
-	print("----COMPLETE----")
+	print("\t----COMPLETE----\t")
 	print("\n")	
 	for couple in tentative_engagements:
 		print("{} is engaged to {}".format(couple[1], couple[0]))

@@ -65,20 +65,28 @@ Here I have put their preferences into dictionaries
 ```python
 preferred_rankings_men = {
 	'Binley':  ['Jane', 'Elizabeth', 'Lydia', 'Charlotte'],
-	'Darcy':   ['Elizabeth', 'Jane', 'Charlotte', "Lydia"],
 	'Wickham': ['Lydia', 'Jane', 'Elizabeth', 'Charlotte'],
+	'Darcy':   ['Elizabeth', 'Jane', 'Charlotte', "Lydia"],
 	'Collins': ['Jane', 'Elizabeth', 'Lydia', 'Charlotte']
 }
 
 preferred_rankings_women = {
 	'Jane' :     ['Binley', 'Wickham', 'Darcy', 'Collins'],
-	'Elizabeth': ['Wickham', 'Darcy', 'Binley', 'Collins'],
 	'Lydia':     ['Binley', 'Wickham', 'Darcy', 'Collins'],
+	'Elizabeth': ['Wickham', 'Darcy', 'Binley', 'Collins'],
 	'Charlotte': ['Binley', 'Darcy', 'Collins', 'Wickham']
 }
 ```
 
 [![Screenshot_from_2018-10-02_22-01-44.png](https://i.postimg.cc/cCF5H0HR/Screenshot_from_2018-10-02_22-01-44.png)](https://postimg.cc/BP1C7W2b)
+
+
+updates 02/10/2018: 
+
+I made the women are able to choose first this time, more like in the movie. Here is the result, same.
+
+[![Screenshot_from_2018-10-02_22-20-15.png](https://i.postimg.cc/J4mpwyp9/Screenshot_from_2018-10-02_22-20-15.png)](https://postimg.cc/mhXYCrfw)
+
 
 So the book was right!
 
@@ -87,3 +95,5 @@ So the book was right!
 Proofs
 
 Java implementation
+
+
