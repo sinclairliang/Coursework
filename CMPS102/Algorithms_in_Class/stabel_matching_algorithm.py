@@ -49,7 +49,7 @@ def begin_matching(man):
 			potential_guy_ranking = preferred_rankings_women[woman].index(man)
 
 			if (current_guy_ranking < potential_guy_ranking):
-				print("She ({}) is satisfied with {}...".format(taken_match[0][1],man))
+				print("She ({}) is satisfied with {}...".format(taken_match[0][1],taken_match[0][0]))
 			else:
 				print("{} is better than the old guy {}".format(man, taken_match[0][0]))
 				print("{} is free agian".format(taken_match[0][0]))
@@ -59,6 +59,7 @@ def begin_matching(man):
 
 				taken_match[0][0] = man
 				break
+	print("\n")	
  
 
 
@@ -70,8 +71,8 @@ def main():
 	stable_matching()
 
 	print("----COMPLETE----")
+	print("\n")	
 	for couple in tentative_engagements:
-	# print(tentative_engagements)
 		print("{} is engaged to {}".format(couple[1], couple[0]))
 
 if __name__ == '__main__':

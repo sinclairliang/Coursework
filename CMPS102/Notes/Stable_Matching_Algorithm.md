@@ -78,12 +78,12 @@ preferred_rankings_women = {
 }
 ```
 
-[![Screenshot_from_2018-10-02_02-23-39.png](https://i.postimg.cc/ncQc3SyT/Screenshot_from_2018-10-02_02-23-39.png)](https://postimg.cc/ppRHTCXn)
+[![Screenshot_from_2018-10-02_22-01-44.png](https://i.postimg.cc/cCF5H0HR/Screenshot_from_2018-10-02_22-01-44.png)](https://postimg.cc/BP1C7W2b)
 
 So the book was right!
 
 :construction::construction: 
-Proofs
 
+Proofs
 
 Java implementation
