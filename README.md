@@ -18,3 +18,10 @@ This is a repository for coursework done by myself, Sinclair Liang. While comple
 * Data Structure in Java and C
 * Algorithms in Java and C
 * Intro to Computer Networking
+* Algorithms and Abstract Data Types in Java and C
+  
+Courses I am currently taking:
+* Computer Architecture
+* Algorithm Analysis
+* Comparative Programming Language
+* Web Applications
