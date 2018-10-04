@@ -100,7 +100,7 @@ Observations:
 2. Once a woman is matched, she never becomes unmatched; she only "trades up."
 ```
 
-## Proof 0 (Proof of Correctiness): ##
+## Proof 0 (Proof of Correctness): ##
 Claim: Algorithm terminates after at most n2iterations of while loop.
 ```
 proof
