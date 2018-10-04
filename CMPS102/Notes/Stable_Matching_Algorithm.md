@@ -90,7 +90,7 @@ I made the women are able to choose first this time, more like in the movie. Her
 
 So the book was right!
 
-:construction::construction: 
+
 
 Proofs
 
@@ -158,6 +158,9 @@ B-Z
 
 5. In either case, *A-Z* is stable.
 6. QED
+
+
+:construction::construction: 
 
 ## Proof 2 ##
 
