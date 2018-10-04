@@ -4,6 +4,8 @@
 
 
 Sinclair's Session:
+
+
 |Day|Time|Location|Notes|Misc.|
 |---|---|---|---|---|
 |Thursday|19:12 - 20:15|TBD|   |   |
