@@ -2,6 +2,8 @@
 
 ### This page is maintained by [Sinclair Liang](https://sinclairliang.com) :smiley: ###
 
+[![computer-science-memes-on-210845.jpg](https://i.postimg.cc/T3wpHMj4/computer-science-memes-on-210845.jpg)](https://postimg.cc/nCyFCWP4)
+
 
 Sinclair's Session:
 
@@ -13,6 +15,7 @@ Sinclair's Session:
 |   |   |   |   |   |
 |   |   |   |   |   |
 
+******
 
 |Date   |Topic   |Notes   |Reference   |Key Words   |
 |---|---|---|---|---|
