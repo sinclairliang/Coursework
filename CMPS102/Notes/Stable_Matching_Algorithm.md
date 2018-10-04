@@ -94,6 +94,81 @@ So the book was right!
 
 Proofs
 
+```
+Observations:
+1. Men propose to women in decreasing order of preference.
+2. Once a woman is matched, she never becomes unmatched; she only "trades up."
+```
+
+## Proof 0 (Proof of Correctiness): ##
+Claim: Algorithm terminates after at most n2iterations of while loop.
+```
+proof
+```
+Each time through the while loop a man proposes to a new woman. There are only n2possible proposals.
+
+
+
+## Prrof 1 (Proof of Correctness:  Perfection): ##
+
+Claim: All men and women get matched
+
+```
+Prrof by comtradiction
+```
+
+1. Suppose there exists one man *m* is not matched upon the termination of algorithm;
+2. Then some woman, *w* is also not matched upon the termination;
+3. By Observation 2: Once a woman is matched, she never becomes unmatched; she only "trades up.", 
+4.  
+ 	 ==>we can imply: *w* was never proposed to.
+
+5. But *m* proposed to everyone because he ends up unmatched.
+6. (1) and (5) contradicts.
+
+## Proof 2 (Proof of Correctness:  Stability) ##:
+
+Claim: All pairs are stable
+```
+Prrof by comtradiction
+```
+
+```
+S*
+A-Y
+B-Z
+```
+
+
+1. Suppose *A-Z* is an unstable pair: each prefers each other to their currently partner in G-S matching S* shown above;
+2. We can then derive two cases in which this can happen:
+3. Case 1: *Z* never proposed to *A*
+   
+   ==> *Z* prefers his G-S matching S* over A;
+
+   ==> *A-Z* is then stable;
+
+4. Case 2: *Z* has proposed to A
+
+   ==> *A* rejected *Z* (Right away or later);
+
+   ==> *A* prefers her  G-S matching S* over *Z*
+
+   ==> *A-Z* is stable';
+
+5. In either case, *A-Z* is stable.
+6. QED
+
+## Proof 2 ##
+
+Claim: All executions of GS yield man-optimal assignment, which is a stable matching!
+
+
+
+
+
+
+
 Java implementation
 
 
