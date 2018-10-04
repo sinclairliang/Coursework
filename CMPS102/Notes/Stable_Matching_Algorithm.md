@@ -109,12 +109,12 @@ Each time through the while loop a man proposes to a new woman. There are only n
 
 
 
-## Prrof 1 (Proof of Correctness:  Perfection): ##
+## Proof 1 (Proof of Correctness:  Perfection): ##
 
 Claim: All men and women get matched
 
 ```
-Prrof by comtradiction
+Proof by contradiction
 ```
 
 1. Suppose there exists one man *m* is not matched upon the termination of algorithm;
@@ -130,7 +130,7 @@ Prrof by comtradiction
 
 Claim: All pairs are stable
 ```
-Prrof by comtradiction
+Proof by contradiction
 ```
 
 ```
