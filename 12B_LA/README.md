@@ -4,6 +4,7 @@
 
 [![computer-science-memes-on-210845.jpg](https://i.postimg.cc/T3wpHMj4/computer-science-memes-on-210845.jpg)](https://postimg.cc/nCyFCWP4)
 
+[![920_0e6ca1aca65ec7aa3e6817a5ee5cd28a.jpg](https://i.postimg.cc/Kz4h4BXQ/920_0e6ca1aca65ec7aa3e6817a5ee5cd28a.jpg)](https://postimg.cc/k6rppVgt)
 
 
 Sinclair's Session:
