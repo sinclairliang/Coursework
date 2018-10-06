@@ -160,7 +160,7 @@ B-Z
 6. QED
 
 
-:construction::construction: 
+
 
 ## Proof 3 (Man Optimality) ##
 
@@ -216,7 +216,28 @@ Z-B
 
 
 
+## Proof 4 (Woman Pessimality) ##
 
+Claim:  GS finds woman-pessimalstable matching S*.
+
+1. Suppose *A-Z* matched in S*, but *Z* is not the worst valid partner for *A*. so *A* likes *Z* more than *Y*;
+
+2. There then exists a stable matching S in which *A* is paired with a man, say *Y*, whom she likes less than *Z*;
+
+3. Let *B-Z* match
+4. Now we have in S:
+
+```
+B-Z
+A-Y
+```
+5. But *A likes *Z* over *Y* and *Z* likes *A* over *B* stated above
+
+    ==> This is not _stable_
+
+
+
+:construction::construction: 
 
 
 ~~Java implementation~~
