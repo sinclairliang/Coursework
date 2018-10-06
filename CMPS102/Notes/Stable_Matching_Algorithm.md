@@ -164,7 +164,7 @@ B-Z
 
 ## Proof 3 (Man Optimality) ##
 
-Claim: All executions of GS yield man-optimal assignment, which is a stable matching!
+Claim: All executions of GS  S* yield man-optimal assignment, which is a stable matching!
 
 ```
 Proof by contradiction
@@ -179,23 +179,40 @@ a valid partner: the one with whom a stable pairing can be formed
     ==> some man is rejected by a valid partner.
 
 2. Let *Y* be such man, such **first** man got rejected by his valid partner; *A* be the such first woman that has rejected *Y*.
+   
+   ==> *A* rejected *Y*
 
-3. Let S be the stable matching in which *A* and *Y* are matched.
+   Then in S* *A* pairs up with someone else, say *Z*
+
+   ```
+   A-Z (A likes Z more than Y)
+   ```
+
+3. Suppose S to be the stable matching in which *A* and *Y* are matched.
 
 ```
-Y
-
-Y <==> A
-
-Z <==> B
+A-Y
 ```
-4. When *Y* is rejected, *A* forms a matching with another man, say *Z*, whom she prefers to *Y*.
-5. Since we have previously proved:
+4. When *Y* is rejected, *A* then forms a matching with another man, say *Z*, whom she prefers to *Y*.
+5. Since we have previously proven:
    
 ```
 "All men and women get matched" [Claim 2]
 ```
-6. Let there be a stable matching *S*, in which *B-Z* are a matching
+6. Also in *S*, let *B-Z* be a matching
+    
+    ==> Now we have such matching shown as *S*
+
+```
+Y-A
+Z-B
+```
+
+7. Is *S* really stable?? Let's see. *Z* has not been rejected by any valid partner at the point when *Y* got rejected, since *Y* was the **first** one got rejected as above stated. 
+
+    ==> *Z* has not been rejected yet, so in S* GS matching, *Z* prefers *A* to any other girl otherwise he would have been rejected.
+
+    ==> However, we have assumed Z-B is a stable matching, which is now false;
 
 
 
