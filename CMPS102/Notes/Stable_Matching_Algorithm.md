@@ -105,7 +105,7 @@ Claim: Algorithm terminates after at most n2iterations of while loop.
 ```
 proof
 ```
-Each time through the while loop a man proposes to a new woman. There are only n2possible proposals.
+Each time through the while loop a man proposes to a new woman. There are only n^2 possible proposals.
 
 
 
@@ -126,7 +126,7 @@ Proof by contradiction
 5. But *m* proposed to everyone because he ends up unmatched.
 6. (1) and (5) contradicts.
 
-## Proof 2 (Proof of Correctness:  Stability) ##:
+## Proof 2 (Proof of Correctness:  Stability) :  ##
 
 Claim: All pairs are stable
 ```
@@ -140,7 +140,7 @@ B-Z
 ```
 
 
-1. Suppose *A-Z* is an unstable pair: each prefers each other to their currently partner in G-S matching S* shown above;
+1. Suppose *A-Z* is an unstable pair: each prefers each other to their currently partner in G-S matching S* above shown;
 2. We can then derive two cases in which this can happen:
 3. Case 1: *Z* never proposed to *A*
    
@@ -152,26 +152,56 @@ B-Z
 
    ==> *A* rejected *Z* (Right away or later);
 
-   ==> *A* prefers her  G-S matching S* over *Z*
+   ==> *A* prefers her current G-S matching S* over *Z*
 
    ==> *A-Z* is stable';
 
-5. In either case, *A-Z* is stable.
+5. In either case, *A-Z* is _stable_.
 6. QED
 
 
 :construction::construction: 
 
-## Proof 2 ##
+## Proof 3 (Man Optimality) ##
 
 Claim: All executions of GS yield man-optimal assignment, which is a stable matching!
 
+```
+Proof by contradiction
+```
+
+```
+a valid partner: the one with whom a stable pairing can be formed
+```
+
+1. Suppose some man is paired with someone that is not his best partner. Man proposes in decreasing order of preference 
+   
+    ==> some man is rejected by a valid partner.
+
+2. Let *Y* be such man, such **first** man got rejected by his valid partner; *A* be the such first woman that has rejected *Y*.
+
+3. Let S be the stable matching in which *A* and *Y* are matched.
+
+```
+Y
+
+Y <==> A
+
+Z <==> B
+```
+4. When *Y* is rejected, *A* forms a matching with another man, say *Z*, whom she prefers to *Y*.
+5. Since we have previously proved:
+   
+```
+"All men and women get matched" [Claim 2]
+```
+6. Let there be a stable matching *S*, in which *B-Z* are a matching
 
 
 
 
 
 
-Java implementation
+~~Java implementation~~
 
 
