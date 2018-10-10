@@ -23,7 +23,7 @@ Sinclair's Session:
 |27/09/2018   |First Class   |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_27_09_2018.md)   |   |Backtracking, Recursion   |
 |02/10/2018   |Class   |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_02_10_2018.md)   |   |Box Trace, Recursion   |
 |04/10/2018   |Class     |   |   |Intro to NQueens Problem|
-|09/10/2018   |Class     |   |   |Abstraction, ADT|
+|09/10/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_09_10_2018.md)||Abstraction, ADT|
 |23/10/2018   |Midterm 1 |   |   |   |
 |29/11/2018   |Midterm 2 |   |   |   |
 |14/12/2018   |Last Day of Instruction|   || No Finals!  |
