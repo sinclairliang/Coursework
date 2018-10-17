@@ -3,32 +3,32 @@ Tribute to https://www.youtube.com/watch?v=FhRf0j068ZA
 and Pride and Prejudice by Jane Austen
 """
 
-# preferred_rankings_men = {
-# 	'Binley':  ['Jane', 'Elizabeth', 'Lydia', 'Charlotte'],
-# 	'Wickham': ['Lydia', 'Jane', 'Elizabeth', 'Charlotte'],
-# 	'Darcy':   ['Elizabeth', 'Jane', 'Charlotte', "Lydia"],
-# 	'Collins': ['Jane', 'Elizabeth', 'Lydia', 'Charlotte']
-# }
-
-# preferred_rankings_women = {
-# 	'Jane' :     ['Binley', 'Wickham', 'Darcy', 'Collins'],
-# 	'Lydia':     ['Binley', 'Wickham', 'Darcy', 'Collins'],
-# 	'Elizabeth': ['Wickham', 'Darcy', 'Binley', 'Collins'],
-# 	'Charlotte': ['Binley', 'Darcy', 'Collins', 'Wickham']
-# }
-
-
 preferred_rankings_men = {
-	'Ben':    ['Alice', 'Sarah', 'Betty'],
-	'Carl':   ['Alice', 'Betty', 'Sarah'],
-	'David':  ['Sarah', 'Alice', 'Betty']
+	'Binley':  ['Jane', 'Elizabeth', 'Lydia', 'Charlotte'],
+	'Wickham': ['Lydia', 'Jane', 'Elizabeth', 'Charlotte'],
+	'Darcy':   ['Elizabeth', 'Jane', 'Charlotte', "Lydia"],
+	'Collins': ['Jane', 'Elizabeth', 'Lydia', 'Charlotte']
 }
 
 preferred_rankings_women = {
-	'Alice' : ['David', 'Carl', 'Ben'],
-	'Sarah':  ['Ben', 'David', 'Carl'],
-	'Betty':  ['Carl', 'David', 'Ben']
+	'Jane' :     ['Binley', 'Wickham', 'Darcy', 'Collins'],
+	'Lydia':     ['Binley', 'Wickham', 'Darcy', 'Collins'],
+	'Elizabeth': ['Wickham', 'Darcy', 'Binley', 'Collins'],
+	'Charlotte': ['Binley', 'Darcy', 'Collins', 'Wickham']
 }
+
+
+# preferred_rankings_men = {
+# 	'Ben':    ['Alice', 'Sarah', 'Betty'],
+# 	'Carl':   ['Alice', 'Betty', 'Sarah'],
+# 	'David':  ['Sarah', 'Alice', 'Betty']
+# }
+
+# preferred_rankings_women = {
+# 	'Alice' : ['David', 'Carl', 'Ben'],
+# 	'Sarah':  ['Ben', 'David', 'Carl'],
+# 	'Betty':  ['Carl', 'David', 'Ben']
+# }
 
 # preferred_rankings_women = {
 # 	# truethful
