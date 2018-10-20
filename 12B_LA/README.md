@@ -26,6 +26,7 @@ Sinclair's Session:
 |09/10/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_09_10_2018.md)||Abstraction, ADT|
 |11/10/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_11_10_2018.md)||LinkedList, Reference Type in Java|
 |16/10/2018   |Class     |[Notes](#)||Pointers in C|
+|18/10/2018   |Class     |[Notes](#)||Pointers in C|
 |23/10/2018   |Midterm 1 |   |   |   |
 |29/11/2018   |Midterm 2 |   |   |   |
 |14/12/2018   |Last Day of Instruction|   || No Finals!  |
