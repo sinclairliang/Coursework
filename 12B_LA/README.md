@@ -11,9 +11,9 @@ Sinclair's Session:
 
 |Day|Time|Location|Notes|Misc.|
 |---|---|---|---|---|
-|Monday  |12:00 - 13:00|Cowell 222 |   |   |
-|Tuesday |17:20 - 18:20|Porter 246 |   |   |
-|Thursday|19:12 - 20:15|ARCenter 202|   |   |
+|Monday  |12:00 - 13:00|Cowell 222           |   |   |
+|Tuesday |17:20 - 18:20|Porter 246           |   |   |
+|Thursday|19:12 - 20:15|ARCenter 202         |   |   |
 |Friday  |12:00 - 13:00|Oakes Learning Center|   |   |
 
 ******
