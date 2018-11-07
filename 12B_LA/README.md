@@ -30,5 +30,6 @@ Sinclair's Session:
 |23/10/2018   |Midterm 1 |Cancelled due to strike|[Notes(not really)](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_23_10_2018.md)|   |
 |30/10/2018   |Midterm 1 |[Notes](#)|:jack_o_lantern: Happy Halloween :jack_o_lantern:|Recursions, Pointers, LinkedList|
 |01/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_01_11_2018.md)||Stack, Trees, Binary Search Tree|
+|06/11/2018   |Class     |[Notes](#)||Binary Search Tree|
 |29/11/2018   |Midterm 2 |   |   |   |
 |14/12/2018   |Last Day of Instruction|   || No Finals!  |
