@@ -32,5 +32,6 @@ Sinclair's Session:
 |01/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_01_11_2018.md)||Stack, Trees, Binary Search Tree|
 |06/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_06_11_2018.md)||Binary Search Tree|
 |08/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_08_11_2018.md)||Deletion in Binary Search Tree|
+|13/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_13_11_2018.md)||Big $O$ notation, Hashtable|
 |29/11/2018   |Midterm 2 |   |   |   |
 |14/12/2018   |Last Day of Instruction|   || No Finals!  |
