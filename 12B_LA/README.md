@@ -34,5 +34,6 @@ Sinclair's Session:
 |08/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_08_11_2018.md)||Deletion in Binary Search Tree|
 |13/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_13_11_2018.md)||Big $O$ notation, Hashtable|
 |15/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_15_11_2018.md)||Revolsing collisions in Hashtable|
+|20/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_20_11_2018.md)||Sorting Algorithms|
 |29/11/2018   |Midterm 2 |   |   |   |
 |14/12/2018   |Last Day of Instruction|   || No Finals!  |
