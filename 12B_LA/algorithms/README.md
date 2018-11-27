@@ -1,5 +1,8 @@
 ## Algorithms for further study ##
 
+First of all I would like offer my best congratulations upon completing CS 12B, data structures. I am very honoured being part of your journey in this interesting topic. Now it is time to move on to algorithms.
+
+
 Why do we need to learn algorithm if I just want to code?
 
 ```
