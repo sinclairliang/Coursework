@@ -36,5 +36,6 @@ Sinclair's Session:
 |15/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_15_11_2018.md)||Revolsing collisions in Hashtable|
 |20/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_20_11_2018.md)||Sorting Algorithms|
 |22/11/2018   |No Class     |N/A|:chicken: Happy Thanksgiving||
+|27/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_27_11_2018.md)||Divide and conquer; sorting algorithms in depth|
 |29/11/2018   |Midterm 2 |   |   |   |
 |14/12/2018   |Last Day of Instruction|   || No Finals!  |
