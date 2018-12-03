@@ -30,7 +30,21 @@ Algorithms and Data Structures are the two most important components in computer
 
 Algorithms, from a broader sense, are ways to instruct computers. It involves design, creativity and mathematical elegancy. I wish you the best luck in further study of algorithms.
 
+If you would like to get a head start in the winter break before your CS 101, I would recommend you some resources online. `Introduction to Algorithms` is a classic, full of mathematics, thus not quite friendly to people with little mathematical backgrounds. 
+
+`Algorithms` by `Sedgewick` is much nicer in my opinion. It covers `Sorting`, `Searching` and `Graphs`. 
+
 The importance of outside projects:
 
-It is great if you get an A in this class I am happy for you. However, I have to say the best way to use all the cool stuff you picked up in 12B is by doing projects. Since you have already had a basic understanding of `Java` language, I encourage you looking into `Spring` or `SpringBoot` framework if you are interested in web development; `Hadoop` is you are more into big data related field. 
+It is great if you get an A in this class I am happy for you. However, I have to say the best way to use all the cool stuff you picked up in 12B is by doing projects. Since you have already had a basic understanding of `Java` language, I encourage you looking into `Spring` or `SpringBoot` framework if you are interested in web development; `Hadoop` is you are more into big data related field. In any case, I personally will be more tha happy to guide you to a project if you have no idea where to start looking. 
 
+I did not realise the importance of outside projects until the tail of summer this year, and I don't want my students to be like me. 
+
+Whichever you do, with all my heart, I wish you a very happy winter break. 
+
+
+
+<img src="https://i.postimg.cc/2ytXvktQ/IMG-5153.jpg" width="200" style="position: absolute;right: 20px">
+
+
+<p style='text-align: right;'> Your Text </p>
