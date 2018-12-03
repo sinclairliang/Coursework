@@ -42,9 +42,10 @@ I did not realise the importance of outside projects until the tail of summer th
 
 Whichever you do, with all my heart, I wish you a very happy winter break. 
 
-
+[![winter-break-snowman.jpg](https://i.postimg.cc/wTX9znRW/winter-break-snowman.jpg)](https://postimg.cc/xc1wyxRH)
 
 <img src="https://i.postimg.cc/2ytXvktQ/IMG-5153.jpg" width="200" style="position: absolute;right: 20px">
 
 
-<p style='text-align: right;'> Your Text </p>
+<p style='text-align: right;'> Sinclair Liang</p>
+<p style='text-align: right;'> 3rd December, 2018</p>
