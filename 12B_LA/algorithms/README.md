@@ -1,4 +1,4 @@
-## Algorithms for further study ##
+## A Letter to My Students##
 
 First of all I would like offer my best congratulations upon completing CS 12B, data structures. I am very honoured being part of your learning journey in this interesting topic. 
 
