@@ -15,13 +15,17 @@ Now it is time to move on to algorithms.
 Why do we need to learn algorithm if I just want to code?
 
 ```
-To use an analogy, if algorithms were about automobiles, it would be for the person who wants to know how cars work, how they are built, and how one might design fuel-efficient, safe, reliable vehicles for the 21st century. The people who hate algorithms are the ones who just want to know how to drive their car on the highway, just like everyone else.
+To use an analogy, if algorithms were about automobiles, it would be for the person who wants to know how cars work, how they are built, 
+and how one might design fuel-efficient, safe, reliable vehicles for the 21st century. 
+The people who hate algorithms are the ones who just want to know how to drive their car on the highway, just like everyone else.
 
 -- Peter Norvig
 ```
 
 ```
-If you want to become a good programmer, you can spend 10 years programming, or spend 2 years programming and learning algorithms.
+If you want to become a good programmer, 
+you can spend 10 years programming, 
+or spend 2 years programming and learning algorithms.
 
 -- Erik Demaine
 ```
