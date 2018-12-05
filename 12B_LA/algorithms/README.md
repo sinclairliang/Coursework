@@ -4,7 +4,7 @@ First of all I would like offer my best congratulations upon completing CS 12B, 
 
 I have much emotions for this class. I have taken it it three times: first time I took it with Professor Tantalo in the summer of my freshmen year, the next quarter, exactly one year before this quarter, I was the small group tutor with Professor Sesh, now I took it again, with you!
 
-Data Structures is so far one of my favourite classes in UC Santa Cruz if not Zumba or Aesthetic in Philosophy. It is fun because it involves creativity, we are learning others' design to efficiently store data, process data and manipulate data. 
+Data Structures is so far one of my favourite classes in UC Santa Cruz if not Zumba or Aesthetic in Philosophy. It is fun because it involves creativity, we are learning others' design to efficiently store, process and manipulate data. 
 
 Every Tuesday and Thursday I was excited to go to school because I knew I had 12B with all of you, to learn such topic once again. Even today I still learn something new when I walk out of that lecture hall. I hope you all had the same excitements when acquiring some new knowledge. 
 
