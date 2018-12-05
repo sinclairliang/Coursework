@@ -38,4 +38,5 @@ Sinclair's Session:
 |22/11/2018   |No Class     |N/A|:chicken: Happy Thanksgiving||
 |27/11/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_27_11_2018.md)||Divide and conquer; sorting algorithms in depth|
 |29/11/2018   |Midterm 2 |   |   |   |
+|05/12/2018   |Class     |[Notes](https://github.com/sinclairliang/Coursework/blob/master/12B_LA/Notes/Notes_27_11_2018.md)||Things we should retain after the course ends|
 |14/12/2018   |Last Day of Instruction|   || No Finals!  |
