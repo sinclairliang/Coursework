@@ -2,15 +2,17 @@
 
 First of all I would like offer my best congratulations upon completing CS 12B, data structures. I am very honoured being part of your learning journey in this interesting topic. 
 
-I have much emotions for this class. I have taken it it three times: first time I took it with Professor Tantalo in the summer of my freshmen year, the next quarter, exactly one year before this quarter, I was the small group tutor with Professor Sesh, now I took it again, with you!
+I walked out of Earth Marine this afternoon it was all dark and windy. It finally comes to an end, CS 12B, which I love and enjoy so much. It was bitter sweet overall, it was hard to say goodbye to something beautiful and joyful. 
 
-Data Structures is so far one of my favourite classes in UC Santa Cruz if not Zumba or Aesthetic in Philosophy. It is fun because it involves creativity, we are learning others' design to efficiently store, process and manipulate data. 
+I have many emotions for this class. I have taken it it three times: first time I took it with Professor Tantalo in the summer of my freshmen year, the next quarter, exactly one year before this quarter, I was the small group tutor with Professor Sesh, now I took it again, with all of you!
+
+Data Structures is so far one of my favourite classes in UC Santa Cruz had Zumba or Aesthetic in Philosophy not being offered. It is fun because it involves creativity in mathematics and engineering, we are learning others' designs to efficiently store, process and manipulate data. 
 
 Every Tuesday and Thursday I was excited to go to school because I knew I had 12B with all of you, to learn such topic once again. Even today I still learn something new when I walk out of that lecture hall. I hope you all had the same excitements when acquiring some new knowledge. 
 
 12B is done, what is next?
 
-Now it is time to move on to algorithms.
+Now it is time to move on to algorithms in the path of computer science.
 
 Why do we need to learn algorithm if I just want to code?
 
@@ -52,4 +54,4 @@ Whichever you do, with all my heart, I wish you a very happy winter break.
 
 
 <p style='text-align: right;'> Sinclair Liang</p>
-<p style='text-align: right;'> 3rd December, 2018</p>
+<p style='text-align: right;'> 6th December, 2018</p>
