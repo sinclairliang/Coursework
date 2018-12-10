@@ -405,6 +405,7 @@ apint* mul(apint* one, apint* two) {
 	else {
 		result->sign = '+';
 	}
+	
 	if (one->length == 1 && two->length == 1) {
 		// if both inputs are single digits;
 		int temp_result = one->digits[0] * two->digits[0];
@@ -433,7 +434,6 @@ apint* mul(apint* one, apint* two) {
 	return result_value;
 }
 
-
 apint* factorial(apint* a) {
 	/*
 	A function to calculate factorial of an apint object;
@@ -452,5 +452,4 @@ apint* factorial(apint* a) {
 	else {
 		return (mul(a, factorial(subtract(a, one))));
 	}
-
 }
