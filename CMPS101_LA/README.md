@@ -16,5 +16,10 @@ Sinclair's Session:
 
 ******
 
-|Date   |Topic   |Notes   |Reference   |Key Words   |
-|---|---|---|---|---|
+|Date         |Topic         |Notes        |Reference   |Key Words     |
+|---          |---           |---          |---         |---           |
+|07/01/2019   |First Class   |[Notes](#)   |            |Insertion Sort|
+|09/01/2019   |Sorting       |[Notes](#)   |            |              |
+|11/01/2019   |Growth of Functions   |[Notes](#)   |    |ADTs          |
+|14/01/2019   |Asymptotic notation  |[Notes](#) |     |Big Oh Notation |
+|16/01/2019   |Proving Algorithms  |[Notes](#) |      |Inductive Proofs|
