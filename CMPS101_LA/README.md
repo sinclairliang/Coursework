@@ -11,7 +11,7 @@ Sinclair's Session:
 |Wednesday |13:20 - 14:20|Cowell 222    |   |   |
 |Wednesday |17:30 - 18:30|ARCenter 202  |Small Group Tutoring|   |
 |Thursday  |19:00 - 20:00|ARCenter 202  |Small Group Tutoring|   |
-|Friday    |16:00 - 17:00|ARCenter 202  |   |   |
+|Friday    |17:20 - 18:20|ARCenter 202  |   |   |
 
 
 ******
@@ -23,3 +23,5 @@ Sinclair's Session:
 |11/01/2019   |Growth of Functions, Divide and Conquer   |[Notes](#)   |    |ADTs, MergeSort          |
 |14/01/2019   |Asymptotic notation  |[Notes](#) |     |Big Oh Notation |
 |16/01/2019   |Proving Algorithms  |[Notes](#) |      |Inductive Proofs|
+|18/01/2019   |Probabilities, Expected Values |[Notes](#) | |Expected Values|
+|21/01/2019   |No Class |[Notes](#) |      ||
