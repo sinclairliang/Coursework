@@ -25,3 +25,6 @@ Sinclair's Session:
 |16/01/2019   |Proving Algorithms  |[Notes](#) |      |Inductive Proofs|
 |18/01/2019   |Probabilities, Expected Values |[Notes](#) | |Expected Values|
 |21/01/2019   |No Class |[Notes](#) |      ||
+|04/02/2019   |Midterm 1 |[Notes](#) |      ||
+|25/02/2019   |Midterm 2 |[Notes](#) |      ||
+|19/03/2019   |Final |[Notes](#) |      ||
