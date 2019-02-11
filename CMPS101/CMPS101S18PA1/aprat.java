@@ -148,9 +148,7 @@ class aprat extends apint
 		if (is_zero(a)) 
 		{
 			return b;	
-		}
-		else
-		{
+		} else {
 			// get the remainder b/a 
 			apint quotient = b.division(a);
 			apint remainder = b.sub(quotient.multiplication(a));
