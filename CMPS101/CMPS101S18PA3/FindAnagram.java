@@ -1,3 +1,4 @@
+
 /* ******************************************************/
 // CREATED: Sinclair Liang on May 9th, 2018;
 // CHANGED: Sinclair Liang on May 9th, 2018: Sorting by code;
@@ -17,7 +18,7 @@ public class FindAnagram extends anagram {
 		int lineNumber = 0;
 		Scanner wordlist = new Scanner(new File(args[0]));
 
-		while ( wordlist.hasNextLine() ) {
+		while (wordlist.hasNextLine()) {
 			// processing wordlist dictionary file;
 			lineNumber++;
 			// calculating how many lines it has;
@@ -31,7 +32,8 @@ public class FindAnagram extends anagram {
 
 		for (int i = 0; i < lineNumber; i++) {
 			// store each line/word into the giant array;
-			pre_gram[i] = wordlist.next();;
+			pre_gram[i] = wordlist.next();
+			;
 		}
 
 		anagram[] grams = new anagram[lineNumber];
@@ -55,8 +57,7 @@ public class FindAnagram extends anagram {
 		Collections.sort(arrli);
 		// sort the arraylist;
 
-		while(true)
-		{
+		while (true) {
 			int anagram_found = 0;
 			Scanner reader = new Scanner(System.in);
 			System.out.println("type a string of letters");
@@ -66,30 +67,23 @@ public class FindAnagram extends anagram {
 
 			int index = Collections.binarySearch(arrli, test);
 			// using Arraylist search to find rhe matching anagram;
-			if (index > 0) 
-			{
+			if (index > 0) {
 				// if found;
 				index = index - 10;
 				// Assuming there is no more than 10 anagrams for any given word;
-				for (int i = 0; i < 20 ; i++) 
-				{
-					if (test.code == arrli.get(index + i).code) 
-					{
-						if (!test.field_string.equals(arrli.get(index + i).field_string)) 
-						{
+				for (int i = 0; i < 20; i++) {
+					if (test.code == arrli.get(index + i).code) {
+						if (!test.field_string.equals(arrli.get(index + i).field_string)) {
 							System.out.println(arrli.get(index + i).field_string);
 							anagram_found++;
 						}
 					}
 				}
-				if (anagram_found<1)
-				{
+				if (anagram_found < 1) {
 					// when no anagram is found;
-					System.out.println("No other Found.");		
+					System.out.println("No other Found.");
 				}
-			}
-			else
-			{
+			} else {
 				// when no anagram is found;
 				System.out.println("Not Found.");
 			}
@@ -97,10 +91,9 @@ public class FindAnagram extends anagram {
 			Scanner user_choice = new Scanner(System.in);
 			System.out.println("Do another (y/n)?");
 			String user_answer = user_choice.next();
-			if(user_answer.equals("n"))
-			{
+			if (user_answer.equals("n")) {
 				break;
-			}		
+			}
 		}
 	}
 }
