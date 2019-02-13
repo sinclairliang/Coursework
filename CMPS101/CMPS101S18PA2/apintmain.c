@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include"apint.h"
-
+#include "apint.h"
 
 void test_print()
 {
@@ -8,24 +7,23 @@ void test_print()
 	char *one = "629749276";
 	char *two = "+4293472965783265";
 	char *three = "-297927289675";
-	apint* demo0 = ArrayConstruct(one);
-	apint* demo1 = ArrayConstruct(two);	
-	apint* demo2 = ArrayConstruct(three);
+	apint *demo0 = ArrayConstruct(one);
+	apint *demo1 = ArrayConstruct(two);
+	apint *demo2 = ArrayConstruct(three);
 	print(demo0);
 	print(demo1);
 	print(demo2);
 	int four = 2396;
 	int five = 23876;
 	int six = 32768;
-	apint* demo3 = intConstruct(four);
-	apint* demo4 = intConstruct(five);	
-	apint* demo5 = intConstruct(six);
+	apint *demo3 = intConstruct(four);
+	apint *demo4 = intConstruct(five);
+	apint *demo5 = intConstruct(six);
 	print(demo3);
 	print(demo4);
 	print(demo5);
 	printf("End of printing Unit test\n");
 }
-
 
 void test_add()
 {
@@ -33,13 +31,13 @@ void test_add()
 	char *one = "56483648";
 	char *two = "+27589292759";
 	char *three = "3842899472082";
-	apint* demo0 = ArrayConstruct(one);
-	apint* demo1 = ArrayConstruct(two);	
-	apint* demo2 = ArrayConstruct(three);
+	apint *demo0 = ArrayConstruct(one);
+	apint *demo1 = ArrayConstruct(two);
+	apint *demo2 = ArrayConstruct(three);
 
-	apint* result1 = add(demo0, demo1);
-	apint* result2 = add(demo0, demo2);
-	apint* result3 = add(demo1, demo2);
+	apint *result1 = add(demo0, demo1);
+	apint *result2 = add(demo0, demo2);
+	apint *result3 = add(demo1, demo2);
 
 	printf("56483648 + 27589292759 = ");
 	print(result1);
@@ -51,7 +49,6 @@ void test_add()
 	print(result3);
 
 	printf("End of addtion unit test\n");
-
 }
 
 void test_sub()
@@ -62,14 +59,14 @@ void test_sub()
 	char *three = "877";
 	char *four = "3842899472082";
 
-	apint* demo0 = ArrayConstruct(one);
-	apint* demo1 = ArrayConstruct(two);	
-	apint* demo2 = ArrayConstruct(three);
-	apint* demo3 = ArrayConstruct(four);
+	apint *demo0 = ArrayConstruct(one);
+	apint *demo1 = ArrayConstruct(two);
+	apint *demo2 = ArrayConstruct(three);
+	apint *demo3 = ArrayConstruct(four);
 
-	apint* result1 = subtract(demo2, demo0);
-	apint* result2 = subtract(demo3, demo1);
-	apint* result3 = subtract(demo1, demo2);
+	apint *result1 = subtract(demo2, demo0);
+	apint *result2 = subtract(demo3, demo1);
+	apint *result3 = subtract(demo1, demo2);
 
 	printf("877 - (-67) = ");
 	print(result1);
@@ -81,9 +78,7 @@ void test_sub()
 	print(result3);
 
 	printf("End of subtraction unit test\n");
-
 }
-
 
 void test_mul()
 {
@@ -92,13 +87,13 @@ void test_mul()
 	char *two = "+27589292759";
 	char *three = "3842899472082";
 
-	apint* demo0 = ArrayConstruct(one);
-	apint* demo1 = ArrayConstruct(two);	
-	apint* demo2 = ArrayConstruct(three);
+	apint *demo0 = ArrayConstruct(one);
+	apint *demo1 = ArrayConstruct(two);
+	apint *demo2 = ArrayConstruct(three);
 
-	apint* result1 = mul(demo2, demo0);
-	apint* result2 = mul(demo2, demo1);
-	apint* result3 = mul(demo1, demo0);
+	apint *result1 = mul(demo2, demo0);
+	apint *result2 = mul(demo2, demo1);
+	apint *result3 = mul(demo1, demo0);
 
 	printf("3842899472082 * 56483648 = ");
 	print(result1);
@@ -110,38 +105,36 @@ void test_mul()
 	print(result3);
 
 	printf("End of multiplication unit test\n");
-
 }
-
 
 void test_extra_credits()
 {
 	printf("Start testing Extra Credits Sections \n");
 	printf("1000! = ");
 	int thousand = 1000;
-	apint* demo0 = intConstruct(thousand);
-	apint* result0 = factorial(demo0);
+	apint *demo0 = intConstruct(thousand);
+	apint *result0 = factorial(demo0);
 	print(result0);
 }
 
-void negative_test(){
+void negative_test()
+{
 	printf("Start testing negative numbers \n");
 	char *one = "-76";
 	char *two = "+658457";
 	char *three = "+25289675";
 	char *four = "-5464";
-	apint* demo0 = ArrayConstruct(one);
-	apint* demo1 = ArrayConstruct(two);	
-	apint* demo2 = ArrayConstruct(three);
-	apint* demo6 = ArrayConstruct(four);
+	apint *demo0 = ArrayConstruct(one);
+	apint *demo1 = ArrayConstruct(two);
+	apint *demo2 = ArrayConstruct(three);
+	apint *demo6 = ArrayConstruct(four);
 
-	apint* demo3 = normalisation(demo0);
-	apint* demo4 = normalisation(demo1);
-	apint* demo5 = normalisation(demo2);
+	apint *demo3 = normalisation(demo0);
+	apint *demo4 = normalisation(demo1);
+	apint *demo5 = normalisation(demo2);
 
-	apint* result1 = add(demo2, demo0);
-	apint* result2 = subtract(demo2, demo6);
-	
+	apint *result1 = add(demo2, demo0);
+	apint *result2 = subtract(demo2, demo6);
 
 	print(demo3);
 	print(demo4);
@@ -151,8 +144,6 @@ void negative_test(){
 	printf("25289675 - (-5464) = ");
 	print(result2);
 }
-
-
 
 int main(void)
 {
@@ -168,6 +159,5 @@ int main(void)
 	printf("\n");
 	test_extra_credits();
 
-
-	return 0;	
+	return 0;
 }
