@@ -5,15 +5,14 @@
 // Dictionary with Hash Table
 //-----------------------------------------------------------------------------
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<assert.h>
-#include"Dictionary.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+#include "Dictionary.h"
 
 #define MAX_LEN 180
 const int tableSize = 101;
-
 
 // ----- functions provided on class webpage------
 // rotate_left()
@@ -23,7 +22,7 @@ unsigned int rotate_left(unsigned int value, int shift)
    int sizeInBits = 8 * sizeof(unsigned int);
    shift = shift & (sizeInBits - 1);
 
-   if ( shift == 0 )
+   if (shift == 0)
       return value;
 
    return (value << shift) | (value >> (sizeInBits - shift));
@@ -31,7 +30,7 @@ unsigned int rotate_left(unsigned int value, int shift)
 
 // pre_hash()
 // turn a string into an unsigned int
-unsigned int pre_hash(char* input)
+unsigned int pre_hash(char *input)
 {
    unsigned int result = 0xBAE86554;
 
@@ -46,27 +45,26 @@ unsigned int pre_hash(char* input)
 
 // hash()
 // turns a string into an int in the range 0 to tableSize-1
-int hash(char* key)
+int hash(char *key)
 {
    return pre_hash(key) % tableSize;
 }
-
 
 // private types --------------------------------------------------------------
 // NodeObj
 typedef struct NodeObj
 {
-   char* key;
-   char* value;
-   struct NodeObj* next;
+   char *key;
+   char *value;
+   struct NodeObj *next;
 } NodeObj;
 
 // Node
-typedef NodeObj* Node;
+typedef NodeObj *Node;
 
 // newNode()
 // constructor of the Node type
-Node neuNode(char* k, char* v)
+Node neuNode(char *k, char *v)
 {
    Node N = malloc(sizeof(NodeObj));
    assert(N != NULL);
@@ -78,9 +76,9 @@ Node neuNode(char* k, char* v)
 
 // freeNode()
 // destructor for the Node type
-void freeNode(Node* pN)
+void freeNode(Node *pN)
 {
-   if ( pN != NULL && *pN != NULL )
+   if (pN != NULL && *pN != NULL)
    {
       free(*pN);
       *pN = NULL;
@@ -94,7 +92,7 @@ typedef struct ListObj
 } ListObj;
 
 // List
-typedef ListObj* List;
+typedef ListObj *List;
 
 //constructor for the List type
 List neuList(void)
@@ -111,8 +109,7 @@ typedef struct DictionaryObj
    int numItems;
 } DictionaryObj;
 
-
-Node find(Node N, char* key)
+Node find(Node N, char *key)
 {
    while (N != NULL)
    {
@@ -136,7 +133,6 @@ void deleteAll(Node N)
    }
 }
 
-
 // public functions -----------------------------------------------------------
 
 // newDictionary()
@@ -151,8 +147,7 @@ Dictionary newDictionary()
    return D;
 }
 
-
-void freeDictionary(Dictionary* pD)
+void freeDictionary(Dictionary *pD)
 {
    if (pD != NULL && *pD != NULL)
    {
@@ -168,7 +163,7 @@ void freeDictionary(Dictionary* pD)
 
 int isEmpty(Dictionary D)
 {
-   if ( D == NULL )
+   if (D == NULL)
    {
       fprintf(stderr, "Dictionary Error: calling isEmpty() on NULL Dictionary reference\n");
       exit(EXIT_FAILURE);
@@ -182,8 +177,7 @@ int size(Dictionary D)
    return D->numItems;
 }
 
-
-char* lookup(Dictionary D, char* k)
+char *lookup(Dictionary D, char *k)
 {
    Node N;
    List L;
@@ -202,7 +196,7 @@ char* lookup(Dictionary D, char* k)
    }
 }
 
-void insert(Dictionary D, char* k, char* v)
+void insert(Dictionary D, char *k, char *v)
 {
 
    Node N;
@@ -232,7 +226,7 @@ void insert(Dictionary D, char* k, char* v)
    }
 }
 
-void delete(Dictionary D, char* k)
+void delete (Dictionary D, char *k)
 {
 
    Node N;
@@ -282,7 +276,6 @@ void delete(Dictionary D, char* k)
    }
 }
 
-
 void makeEmpty(Dictionary D)
 {
    List L;
@@ -309,8 +302,7 @@ void makeEmpty(Dictionary D)
    D->numItems = 0;
 }
 
-
-void printDictionary(FILE* out, Dictionary D)
+void printDictionary(FILE *out, Dictionary D)
 {
    Node N;
    List L;
