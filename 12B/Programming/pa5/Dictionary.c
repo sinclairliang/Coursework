@@ -39,7 +39,7 @@ unsigned int pre_hash(char *input)
       result ^= *input++;
       result = rotate_left(result, 5);
    }
-
+   
    return result;
 }
 

@@ -26,11 +26,11 @@ typedef struct apint
 } apint;
 
 apint *subtract(apint *one, apint *two);
-/*
+	/*
 	prototype for subtract to be called before it is defined;
 	*/
 
-apint *apint_new()
+apint *apint_new() 
 {
 	/*
 	default constructor, to allocate memory;
@@ -61,9 +61,7 @@ apint *normalisation(apint *original)
 		result->length++;
 		result->digits = malloc(result->length * sizeof(int));
 		result->digits[0] = 0;
-	}
-	else
-	{
+	} else {
 		result->digits = malloc(result->length * sizeof(int));
 		for (int i = 0; i < result->length; i++)
 		{

@@ -30,37 +30,37 @@ int main(int argc, char* argv[]){
    char* whitespace;    // string holding all whitespace chars
 
    // check command line for correct number of arguments 
-   if( argc != 3 ){
+   if(argc != 3 ){
       printf("Usage: %s input-file output-file\n", argv[0]);
       exit(EXIT_FAILURE);
    }
 
    // open input file for reading 
-   if( (in=fopen(argv[1], "r"))==NULL ){
+   if((in=fopen(argv[1], "r"))==NULL ){
       printf("Unable to read from file %s\n", argv[1]);
       exit(EXIT_FAILURE);
    }
 
    // open output file for writing 
-   if( (out=fopen(argv[2], "w"))==NULL ){
+   if((out=fopen(argv[2], "w"))==NULL ){
       printf("Unable to write to file %s\n", argv[2]);
       exit(EXIT_FAILURE);
    }
 
-   line = calloc(MAX_STRING_LENGTH+1, sizeof(char) );
-   alpha = calloc(MAX_STRING_LENGTH+1, sizeof(char) );
-   digit = calloc(MAX_STRING_LENGTH+1, sizeof(char) );
-   punctuation = calloc(MAX_STRING_LENGTH+1, sizeof(char) );
-   whitespace = calloc(MAX_STRING_LENGTH+1, sizeof(char) );
+   line = calloc(MAX_STRING_LENGTH+1, sizeof(char));
+   alpha = calloc(MAX_STRING_LENGTH+1, sizeof(char));
+   digit = calloc(MAX_STRING_LENGTH+1, sizeof(char));
+   punctuation = calloc(MAX_STRING_LENGTH+1, sizeof(char));
+   whitespace = calloc(MAX_STRING_LENGTH+1, sizeof(char));
 
-   assert( line!=NULL && alpha!=NULL );
-   assert( line!=NULL && digit!=NULL );
-   assert( line!=NULL && punctuation!=NULL );
-   assert( line!=NULL && whitespace!=NULL );
+   assert(line!=NULL && alpha!=NULL);
+   assert(line!=NULL && digit!=NULL);
+   assert(line!=NULL && punctuation!=NULL);
+   assert(line!=NULL && whitespace!=NULL);
 
    int j = 0;
 
-   while( fgets(line, MAX_STRING_LENGTH, in) != NULL ){
+   while(fgets(line, MAX_STRING_LENGTH, in) != NULL){
       j++;
       extract_chars(line, alpha, digit, punctuation, whitespace);
       fprintf(out,"line %d contains:\n", j);

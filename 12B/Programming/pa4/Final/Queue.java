@@ -74,7 +74,7 @@ public class Queue implements QueueInterface {
 
   public Object peek() throws QueueEmptyException {
     // Object returnValue = head.value;
-    if ( this.isEmpty()) {
+    if (this.isEmpty()) {
       throw new QueueEmptyException("cannot dequeue() empty queue");
     }
 
@@ -82,7 +82,7 @@ public class Queue implements QueueInterface {
   }
 
   public void dequeueAll() throws QueueEmptyException {
-    if ( this.isEmpty()) {
+    if (this.isEmpty()) {
       throw new QueueEmptyException("cannot dequeue() empty queue");
     }
 
