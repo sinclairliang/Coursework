@@ -64,7 +64,6 @@ public class Queue implements QueueInterface {
     if ( this.isEmpty()) {
       throw new QueueEmptyException("cannot dequeue() empty queue");
     }
-
     Node N = head;
     Object returnValue = head.value;
     head = head.next;
@@ -77,7 +76,6 @@ public class Queue implements QueueInterface {
     if (this.isEmpty()) {
       throw new QueueEmptyException("cannot dequeue() empty queue");
     }
-
     return head.value;
   }
 
