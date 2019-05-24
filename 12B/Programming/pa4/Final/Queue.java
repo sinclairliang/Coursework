@@ -83,7 +83,6 @@ public class Queue implements QueueInterface {
     if (this.isEmpty()) {
       throw new QueueEmptyException("cannot dequeue() empty queue");
     }
-
     head = null;
     rear = null;
     numItems = 0;

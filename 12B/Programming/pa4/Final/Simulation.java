@@ -147,7 +147,6 @@ public class Simulation {
                     jobDone = true;
                 }
 
-
                 openline = true;
 
                 for (int i = 0; i < n; i++) {
