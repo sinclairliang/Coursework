@@ -11,6 +11,7 @@ public class Dictionary implements DictionaryInterface {
 		String value;
 		Node left;
 		Node right;
+
 		Node(String key, String value) {
 			this.key = key;
 			this.value = value;
@@ -30,15 +31,13 @@ public class Dictionary implements DictionaryInterface {
 			return R;
 		}
 
-		if (key == R.key) {
+		if (key.compareTo(R.key) < 0 ) {
 			return find(R.left, key);
 
 		} else {
 			return find(R.right, key);
 		}
 	}
-
-
 
 	Node findParent(Node N, Node R) {
 		Node P = null;
@@ -63,16 +62,13 @@ public class Dictionary implements DictionaryInterface {
 		Node L = R;
 
 		if (L != null) {
-			for (; L.left != null ; L = L.left) {
+			for (; L.left != null; L = L.left) {
 				return L;
 			}
 		}
 
 		return L;
 	}
-
-
-
 
 	// ------ dictionary constructor which initializes the private feild -----
 	public Dictionary() {
@@ -149,7 +145,6 @@ public class Dictionary implements DictionaryInterface {
 
 		numItems++;
 	}
-
 
 	public void delete(String key) throws KeyNotFoundException {
 		Node N, P, S;
