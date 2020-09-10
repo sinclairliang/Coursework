@@ -9,7 +9,7 @@
 import random
 import math
 
-#help from: MIT Random Walk http://www.mit.edu/~kardar/teaching/projects/chemotaxis(AndreaSchmidt)/random.htm
+# help from: MIT Random Walk http://www.mit.edu/~kardar/teaching/projects/chemotaxis(AndreaSchmidt)/random.htm
 
 while True:
     start_location = int(input('What is the start location (1-499)?'))
@@ -17,12 +17,12 @@ while True:
         break
 
 while True:
-    minimum_value = int(input('What is the minimum value (0-' + str(start_location-1) + ')?'))
+    minimum_value = int(input('What is the minimum value (0-' + str(start_location - 1) + ')?'))
     if start_location >= minimum_value:
         break
 
 while True:
-    max_value = int(input('What is the maximum value (' + str(start_location+1) + '- 500) ?'))
+    max_value = int(input('What is the maximum value (' + str(start_location + 1) + '- 500) ?'))
     if start_location <= max_value:
         break
 percentage = float(input('What is the percentage chance of moving right (1-99)?'))
@@ -34,7 +34,7 @@ def one_walk(steps):
     location = start_location
     walked = 0
     while (location < max_value) and (location > minimum_value) and (walked < steps):
-        step = random.randint(0,1)
+        step = random.randint(0, 1)
         if step == 1:
             location += 1
         else:
@@ -53,9 +53,9 @@ def many_walks(n):
     return list1
 
 
-x_left = [] #empty list to hold values
-x_right = [] #empty list to hold values
-hit_5000 = [] #empty list to hold values
+x_left = []  # empty list to hold values
+x_right = []  # empty list to hold values
+hit_5000 = []  # empty list to hold values
 
 for x in many_walks(num_of_walk):
     if x[1] == minimum_value:
@@ -65,6 +65,7 @@ for x in many_walks(num_of_walk):
     elif x[0] == 5000:
         hit_5000.append(x)
 
+
 def count_mean(listof):
     step = 0
     for c in listof:
@@ -72,24 +73,26 @@ def count_mean(listof):
     if len(listof) == 0:
         mean = 0
     else:
-        mean = step/len(listof)
+        mean = step / len(listof)
     return mean
+
 
 def online_variance(data):
     # Get help from online sources, 'Online Variance' on Wikipedia
-    #url = https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance
+    # url = https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance
     n = 0
     mean = 0.0
     M2 = 0.0
     for x in data:
         n += 1
         delta = x - mean
-        mean += delta/n
-        M2 += delta*(x - mean)
+        mean += delta / n
+        M2 += delta * (x - mean)
     if n < 2:
         return float('nan')
     else:
         return M2 / (n - 1)
+
 
 def count_sedev(listof):
     new_list_for_steps = []
@@ -98,26 +101,25 @@ def count_sedev(listof):
     result = math.sqrt(online_variance(new_list_for_steps))
     return result
 
-allsteps = [] #put all the steps in different lists together
+
+allsteps = []  # put all the steps in different lists together
 allsteps.extend(x_left)
 allsteps.extend(x_right)
 allsteps.extend(hit_5000)
 
 print('Walks that ended on the left:')
-print('\tNumber of walks:'+str(len(x_left)))
-print('\tMean number of steps per walk:'+str(count_mean(x_left)))
-print('\tStandard deviation of number of steps per walk:'+str(count_sedev(x_left)))
+print('\tNumber of walks:' + str(len(x_left)))
+print('\tMean number of steps per walk:' + str(count_mean(x_left)))
+print('\tStandard deviation of number of steps per walk:' + str(count_sedev(x_left)))
 print('Walks that ended on the right:')
-print('\tNumber of walks:'+str(len(x_right)))
-print('\tMean number of steps per walk:'+str(count_mean(x_right)))
-print('\tStandard deviation of number of steps per walk:'+str(count_sedev(x_right)))
+print('\tNumber of walks:' + str(len(x_right)))
+print('\tMean number of steps per walk:' + str(count_mean(x_right)))
+print('\tStandard deviation of number of steps per walk:' + str(count_sedev(x_right)))
 print('Walks that hit 5000 steps:')
-print('\tNumber of walks:'+str(len(hit_5000)))
-print('\tMean number of steps per walk:'+str(count_mean(hit_5000)))
-print('\tStandard deviation of number of steps per walk:'+str(0.0))
+print('\tNumber of walks:' + str(len(hit_5000)))
+print('\tMean number of steps per walk:' + str(count_mean(hit_5000)))
+print('\tStandard deviation of number of steps per walk:' + str(0.0))
 print('All Walks:')
-print('\tNumber of walks:'+str(len(x_left)+len(x_right)+len(hit_5000)))
-print('\tMean number of steps per walk:'+str(count_mean(allsteps)))
-print('\tStandard deviation of number of steps per walk:'+str(count_sedev((x_left)+(x_right)+(hit_5000))))
-
-
+print('\tNumber of walks:' + str(len(x_left) + len(x_right) + len(hit_5000)))
+print('\tMean number of steps per walk:' + str(count_mean(allsteps)))
+print('\tStandard deviation of number of steps per walk:' + str(count_sedev((x_left) + (x_right) + (hit_5000))))
